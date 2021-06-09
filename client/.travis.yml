@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before-install: 
+  - docker build -t yoyowu1000/react-test -f ./client/Dockerfile.dev ./client
+
+script:
+  - 
